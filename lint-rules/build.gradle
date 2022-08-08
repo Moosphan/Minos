@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'com.android.lint'
+}
+
+dependencies {
+    compileOnly "com.android.tools.lint:lint-api:${rootProject.ext.lintVersion}"
+    compileOnly "com.android.tools.lint:lint-checks:${rootProject.ext.lintVersion}"
+
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "com.android.tools.lint:lint:$lintVersion"
+    testImplementation "com.android.tools.lint:lint-tests:$lintVersion"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}

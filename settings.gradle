@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+    }
+}
+rootProject.name = "Minos"
+include ':app'
+include ':lint-aar'         // 自定义lint发布专用，将lint-jar置于其内
+include ':lint-rules'       // AGP-4.0及以后自定义lint全新方式(参考: https://github.com/googlesamples/android-custom-lint-rules)
+include ':lint-rules-old'   // AGP-4.0之前自定义lint方式
