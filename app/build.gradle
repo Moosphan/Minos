@@ -29,6 +29,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    lintOptions {
+        textReport false
+        lintConfig file('default-lint.xml') // At `app/default-lint.xml`
+    }
 }
 
 dependencies {

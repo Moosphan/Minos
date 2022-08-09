@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- The special id "all" matches all issues but is only consulted
+         if there is no specific match -->
+<!--    <issue id="all" severity="ignore" />-->
+    <!-- Possible severities: ignore, information, warning, error, fatal -->
+    <issue id="ValidActionsXml" severity="error" />
+    <issue id="ObsoleteLayoutParam">
+        <!-- The <ignore> tag has two possible attributes: path and regexp (see below) -->
+        <ignore path="res/layout-xlarge/activation.xml" />
+        <!-- You can use globbing patterns in the path strings -->
+        <ignore path="**/layout-x*/onclick.xml" />
+        <ignore path="res/**/activation.xml" />
+    </issue>
+
+<!--    <issue id="MissingTranslation" severity="ignore"/>-->
+<!--    <issue id="KotlinTodo" severity="ignore"/>-->
+</lint>
