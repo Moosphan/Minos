@@ -23,5 +23,5 @@ android {
 
 dependencies {
 //    implementation project(':lint-rules-old')
-    lintPublish project(':lint-rules-old')
+    lintPublish project(':lint-rules')
 }

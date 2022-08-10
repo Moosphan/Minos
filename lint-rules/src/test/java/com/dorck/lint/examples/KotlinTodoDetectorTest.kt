@@ -2,7 +2,7 @@ package com.dorck.lint.examples
 
 import com.android.tools.lint.checks.infrastructure.TestFiles.kotlin
 import com.android.tools.lint.checks.infrastructure.TestLintTask.lint
-import com.dorck.lint.rules.old.issues.KotlinTodoDetector
+import com.dorck.android.lint.rules.issues.KotlinTodoDetector
 import org.junit.Test
 
 @Suppress("UnstableApiUsage")

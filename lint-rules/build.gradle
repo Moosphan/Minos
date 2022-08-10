@@ -5,8 +5,11 @@ plugins {
 }
 
 dependencies {
+    // 官方提供的Lint相关API，并不稳定，每次AGP升级都可能会更改，且并不是向下兼容的
     compileOnly "com.android.tools.lint:lint-api:${rootProject.ext.lintVersion}"
+    // 目前Android中内置的lint检测规则
     compileOnly "com.android.tools.lint:lint-checks:${rootProject.ext.lintVersion}"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     testImplementation "junit:junit:4.13.2"
     testImplementation "com.android.tools.lint:lint:$lintVersion"

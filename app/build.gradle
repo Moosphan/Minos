@@ -33,6 +33,9 @@ android {
     lintOptions {
         textReport false
         lintConfig file('default-lint.xml') // At `app/default-lint.xml`
+        // disable 'KotlinTodo', 'MissingTranslation'
+        xmlOutput file("lint-report.xml")
+        // baseline file("lint-baseline.xml")
     }
 }
 

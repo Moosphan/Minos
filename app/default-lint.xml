@@ -14,5 +14,8 @@
     </issue>
 
 <!--    <issue id="MissingTranslation" severity="ignore"/>-->
-<!--    <issue id="KotlinTodo" severity="ignore"/>-->
+    <issue id="KotlinTodo">
+        <!-- TODO:Why this cannot ignore! -->
+        <ignore path="com.dorck.minos.MainActivity"/>
+    </issue>
 </lint>

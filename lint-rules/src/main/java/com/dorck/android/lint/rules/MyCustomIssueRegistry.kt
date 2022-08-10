@@ -3,12 +3,15 @@ package com.dorck.android.lint.rules
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API
 import com.android.tools.lint.detector.api.Issue
+import com.dorck.android.lint.rules.issues.JcenterDetector
+import com.dorck.android.lint.rules.issues.KotlinTodoDetector
 
 @Suppress("UnstableApiUsage")
 class MyCustomIssueRegistry : IssueRegistry() {
     override val issues: List<Issue>
         get() = listOf(
-
+            JcenterDetector.ISSUE,
+            KotlinTodoDetector.ISSUE,
         )
 
     override val minApi: Int
