@@ -8,7 +8,10 @@ Minos 意为古希腊神话中的审判官，负责最终的判决。本项目�
 - app: Just used for testing lint rules and show the real testing environment.
 
 ## To do
-- [ ] Implement custom lint rules samples.
-- [ ] Write article to show base usage of custom lint.
-- [ ] Introduce new features of lint since AGP-7.0.
+- [x] Implement custom lint rules samples.
+- [x] Write article to show base usage of custom lint.
+- [x] Introduce new features of lint since AGP-7.0.
 - [ ] Highly configurable lint project without any coding.
+
+## Article reference
+- [*Android自定义lint的二三事儿*](https://dorck.cn/android/2022/08/10/android-lint/)
